@@ -1,0 +1,31 @@
+
+-----------------------------------------
+
+1. Check 
+   $ service mysql status
+
+2. If active run 
+   $ sudo service mysql stop
+
+3. Run
+   $ sudo docker-compose up 
+    
+  [Here it will create the docker container and images for Zookeeper,Kafka,Springboot and Mysql]
+
+4. After the server started run the consumer application
+
+5. Hit the url
+ 
+   http://localhost:9090/api/v1/start_ride
+
+   http://localhost:9090/api/v1/pause_ride
+
+   http://localhost:9090/api/v1/restart_ride
+
+   http://localhost:9090/api/v1/end_ride
+
+6. As you hit end_ride the message will be passed to the consumer service
+
+
+
+_____________________________________________ 
